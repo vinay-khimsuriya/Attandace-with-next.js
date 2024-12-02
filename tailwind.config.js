@@ -8,8 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        customBlue: "#3515ea",
+      },
+      spacing: {
+        123: "10rem",
+      },
+      fontFamily: {
+        poppins: ["var(--poppins)"],
       },
     },
   },

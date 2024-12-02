@@ -2,9 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --primary-text-color: #1f2029;
+  --secondary-text-color: #878da9;
+  --blue-text-color: #3515ea;
+
+  --primary-background-color: #f8f8fb;
+  --secondary-background-color: #ffffff;
+  --blue-background-color: #2d80ff;
+
+  --border-color-primary: #d6d8e1;
+  --border-color-secondary: rgba(27, 98, 245, 0.6);
+
+  --border-radius-7: 7px;
+
+  --font-size-14: 14px;
+  --line-height-14: 11px;
+
+  --font-size-15: 15px;
+  --line-height-15: 22.5px;
+
+  --font-size-13: 13px;
+  --line-height-13: 19.5px;
+
+  --font-size-25: 25px;
+  --line-height-25: 37.5px;
+
+  --font-family-poppins: "Poppins", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,5 +52,11 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-1 rounded-md font-semibold text-pretty text-lg font-poppins;
   }
 }
